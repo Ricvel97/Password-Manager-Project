@@ -47,9 +47,6 @@ def add_password():
             website_entry.delete(0, END)
             password_entry.delete(0, END)
 
-
-
-
 # ---------------------------- UI SETUP ------------------------------- #
 
 root = Tk()
@@ -91,7 +88,6 @@ password_entry.grid(column=1, row=3)
 # -------------------------------------- Buttons -------------------------------------
 add_button = Button(text="Add", width=40, bg="#D2C1B6", fg="black", font=("Courier", 10, "bold"), command=add_password)
 add_button.grid(column=1, row=4, columnspan=2)
-
 
 gen_pass_button = Button(text="Generate Password", bg="#D2C1B6", fg="black", font=("Courier", 10, "bold"), command=random_password)
 gen_pass_button.grid(column=2, row=3)
